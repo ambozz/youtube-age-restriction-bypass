@@ -1,0 +1,19 @@
+{
+  "name": "YouTube Anti Age Restriction",
+  "description": "Watch videos without proving your Age with an ID. Made by amboss (https://github.com/ambozz)",
+  "version": "1.0",
+  "manifest_version": 3,
+  "permissions": ["storage", "activeTab", "scripting"],
+  "action": {
+    "default_icon": {
+      "512": "/images/icon.png"
+    }
+  },
+  "icons": {
+    "512": "/images/icon.png"
+  },
+  "content_scripts": [{
+    "matches": ["https://www.youtube.com/*"],
+    "js": ["content.js"]
+  }]
+}
